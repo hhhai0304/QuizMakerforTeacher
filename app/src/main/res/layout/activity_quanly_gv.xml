@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XIN CHÀO, ĐÂY LÀ GIAO DIỆN CỦA GIẢNG VIÊN"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:id="@+id/tvHelloGV" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:hint="Nhập Mã Đề"
+            android:layout_height="fill_parent"
+            android:id="@+id/edtMaDeGV" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text="Xem Điểm"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_pressed"
+            android:id="@+id/btnXemDiem" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvKetQuaDiem" />
+    </ScrollView>
+</LinearLayout>
